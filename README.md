@@ -23,52 +23,49 @@ The API manages **notes and comments**, supporting soft delete, restore operatio
 ---
 
 ## Project Structure
+
+```text
 drf-clean-architecture-notes
 │
-├── config/ # Django project configuration
-│ ├── settings.py
-│ └── urls.py
+├── config/                  # Django project configuration
+│   ├── settings.py
+│   └── urls.py
 │
-├── notes_commented/ # Main application
-│
-│ ├── models.py # Database models
-│
-│ ├── domain/ # Domain result enums
-│ │
-│ ├── repositories/ # Data access layer
-│ │
-│ ├── commands/ # Business actions
-│ │
-│ └── api/ # API layer (views, serializers, urls)
+├── notes_commented/         # Main application
+│   ├── models.py            # Database models
+│   ├── domain/              # Domain result enums
+│   ├── repositories/        # Data access layer
+│   ├── commands/            # Business actions
+│   └── api/                 # API layer (views, serializers, urls)
 │
 ├── manage.py
 ├── requirements.txt
 └── README.md
+```
 
 ## Architecture
-
+```text
 The project follows a layered structure inspired by clean architecture principles.
 notes_commented/
 │
 ├── models.py
 ├── domain/
-│ └── note_and_comments_result.py
-│
+│   └── note_and_comments_result.py
 ├── repositories/
-│ ├── note_repository.py
-│ └── comment_repository.py
-│
+│   ├── note_repository.py
+│   └── comment_repository.py
 ├── commands/
-│ ├── note_delete.py
-│ ├── note_restore.py
-│ ├── comment_delete.py
-│ └── comment_restore.py
-│
+│   ├── note_delete.py
+│   ├── note_restore.py
+│   ├── comment_delete.py
+│   └── comment_restore.py
 └── api/
-├── serializers.py
-├── views.py
-└── urls.py
+    ├── serializers.py
+    ├── views.py
+    └── urls.py
+```
 
+```text
 Request
    │
    ▼
@@ -82,7 +79,7 @@ Repositories (Data Access)
    │
    ▼
 Django ORM / Database
-
+```
 
 ### Responsibilities
 
