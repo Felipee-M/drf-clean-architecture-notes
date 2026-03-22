@@ -3,9 +3,21 @@
 ![Django](https://img.shields.io/badge/django-REST%20Framework-green)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 
-Study project built with **Django REST Framework** to practice a layered architecture using **Repository and Command patterns**.
+⚠️ This project is part of my **backend learning journey** before transitioning my focus to **Data Analytics**.
 
-The API manages **notes and comments**, supporting soft delete, restore operations and nested resources.
+It demonstrates solid foundations in **API design, business logic structuring and clean architecture principles**, which I now leverage in data-related projects.
+
+---
+
+## 📌 Overview
+
+Study project built with **Django REST Framework** to practice a layered architecture using:
+
+- Repository Pattern  
+- Command Pattern  
+- Separation of concerns  
+
+The API manages **notes and comments**, including soft delete, restore operations and nested resources.
 
 ---
 
@@ -214,13 +226,8 @@ This project was created as part of a backend learning path to practice:
 - Business rule isolation
 - Clean code structure
 
-## What I Practiced
+## 📌 Key Takeaways
 
-This project was created to practice backend development concepts such as:
-
-- Django REST Framework API design
-- Repository pattern
-- Command pattern
-- Soft delete strategies
-- Nested resources
-- Separation of business logic from API layer
+- Separation of concerns improves scalability and readability
+- Business logic should not live in views
+- Structured architecture simplifies testing and maintenance
